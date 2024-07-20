@@ -1,0 +1,197 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+ 
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+
+}
+
+nav{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+   
+}
+
+
+
+
+.container {
+    height: calc(100% - 80px); /* Ajusta el valor según la altura de tu header y footer */
+    overflow-y: auto;
+    padding: 5px;
+}
+
+footer {
+    background-color: #000000;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.ll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;}
+
+#perfil-narvar{
+    display: flex;
+    justify-content: start;
+
+}
+
+.post-nav {
+    display: flex;
+    width: 100%;
+
+}
+.post-nav2{
+    display: flex;
+    width: 100%;
+
+}
+.search-box {
+    flex: 9; /* Ocupa el 90% del ancho */
+    display: flex;
+    align-items: center;
+    padding:  10px;
+}
+.search-box input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.other-box {
+    flex: 1; /* Ocupa el 10% del ancho */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+
+.container-galerias{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    flex-wrap: wrap;
+   
+
+}
+
+.dividir{
+    display: grid;
+    width: 47%;
+    height: 100%;
+    background-color: #000000;
+    padding: 5px;
+    
+
+}
+
+#album-fotos{
+    display: grid;
+    width: 100%;
+    height: 140px;
+    border-radius: 10px; /* Bordes redondeados del contenedor */
+    overflow: hidden; /* Evita que las imágenes se salgan del contenedor */
+  
+}
+
+#describir{
+    display: grid;
+    width: 100%;
+   
+}
+
+#album-fotos{
+    display: flex;
+}
+
+
+.main-photo {
+    flex: 7; /* Ocupa el 70% del ancho */
+    height: 100%;
+}
+
+.main-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+.side-photos {
+    flex: 3; /* Ocupa el 30% del ancho */
+    display: flex;
+    flex-direction: column;
+}
+
+.side-photo {
+    flex: 1; /* Cada una ocupa el 50% del alto */
+    height: 50%;
+}
+
+.side-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+
+
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    padding: 7px;
+}
+
+.flex-container button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+}
+
+.flex-container button:hover {
+    background-color: #555;
+}
