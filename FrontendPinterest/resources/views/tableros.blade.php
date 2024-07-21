@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tableros</title>
     <script src="https://kit.fontawesome.com/3cf485552f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">

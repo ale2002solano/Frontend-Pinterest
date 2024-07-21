@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/3cf485552f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <!-- <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}"> -->
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav>
 
             <div class="ll" id="perfil-narvar" href="#Profile">O</div>
@@ -114,7 +114,7 @@
 
         </div>
       
-    </footer>
+    </footer> -->
 </body>
 <script src="./java/index.js" ></script>
 </html>
