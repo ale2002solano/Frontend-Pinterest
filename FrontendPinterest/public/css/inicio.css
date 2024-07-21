@@ -1,0 +1,5 @@
+.contfondo {
+    display: grid;
+    grid-column: 3;
+    grid-auto-rows: auto;	
+}
