@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="{{ asset('css/index.css') }}"> -->
 </head>
 <body>
-    <!-- <header>
+
+  
+    <header>
         <nav>
 
             <div class="ll" id="perfil-narvar" href="#Profile">O</div>
