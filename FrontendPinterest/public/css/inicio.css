@@ -1,6 +1,7 @@
 .contfondo {
     display: grid;
-    grid-column: 3;
-    grid-auto-rows: auto;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-auto-rows:min-content(100px,auto);
     color: blue;	
 }
