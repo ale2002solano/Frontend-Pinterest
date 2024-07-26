@@ -1,7 +1,56 @@
+@media only screen and (device-width: 414px) and 
+(device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
 .contfondo {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(2,1fr);
     padding: 10px;
     grid-auto-rows:min-content(100px,auto);
-    color: blue;	
+    color: white;
+    padding: 10px;
+        grid-auto-rows: auto;
+        grid-gap: 10px;
+        grid-auto-flow: dense;
+    position: relative;
+    z-index: 1;
+}
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.descp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contlog{
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    box-shadow: -0px -80px 50px 70px black;
+    margin-bottom: 0;
+    height: 100%;
+    z-index: 2;
+}
+
+.logo{
+    position: relative;
+    align-content: centers;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+#logo{
+    height: 100%;
+    width: auto;
+    max-width: 200px;
+    position: relative;
+    
 }
