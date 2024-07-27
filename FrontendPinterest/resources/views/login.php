@@ -12,29 +12,32 @@
 </head>
 
 <body style="background-color: black;">
+    <!-- Logo pinterest -->
+<div class="logo"><img src="../img/pinterest-logo.png" id="logo"></div>
 
     <!--contenedor principal imagenes de fondo-->
     <div class="contfondo">
-        <div class="foto"><img class="responsive" src="../img/ini1.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
-        <div class="foto"><img class="responsive" src="../img/ini2.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
         <div class="foto"><img class="responsive" src="../img/ini3.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
+        <div class="foto"><img class="responsive" src="../img/ini2.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
+        <div class="foto"><img class="responsive" src="../img/ini1.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
         <div class="foto"><img class="responsive" src="../img/ini4.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
         <div class="foto"><img class="responsive" src="../img/ini5.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
         <div class="foto"><img class="responsive" src="../img/ini6.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
     </div>
-    <div class="logo"><img src="../img/pinterest-logo.png" id="logo"></div>
+    <!-- Contenedor login -->
     <div class="contlog">
         <div class="logform">
-            <form action="login" method="POST">
-                <input type="text" name="username" placeholder="Nombre de usuario" required>
-                <input type="password" name="password" placeholder="Contraseña" required>
-                <input type="submit" value="Iniciar sesión">
-                <a href="#">Olvidé mi contraseña</a>
+        <p class="head">Te damos la bienvenida a Pinterest</p>
+            <form action="login" method="POST" id="logform">
+                <input type="text" name="username" placeholder="Correo" required><br>
+                <input type="password" name="password" placeholder="Contraseña" required><br>
+                <input type="submit" value="Continuar" class="boton">
             </form>
         </div>
         <div class="crear">
             <p>¿No tienes una cuenta?</p>
-            <a href="register">Regístrate</a>
+            <a href="register" style="color: gray;">Regístrate</a><br>
+            <p>Al continuar, aceptas las <span id="blue">Condiciones de servicio</span> de Pinterest y reconoces que leíste nuestra <span id="blue">Política de privacidad</span>. <span id="blue">Aviso de recopilación de información</span>.</p>
         </div>
     </div>
     </div>
