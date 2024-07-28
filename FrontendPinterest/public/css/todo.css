@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #222;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+.content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+.pin {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+}
+.pin img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.pin p {
+    margin: 5px 0;
+}
+.pin .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+.pin .actions button {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pin .actions button:hover {
+    background-color: #777;
+}
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.bottom-nav a i {
+    display: block;
+    font-size: 24px;
+}
