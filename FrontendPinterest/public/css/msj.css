@@ -1,8 +1,21 @@
+/* INICIO DEL ENCABEZADO */
+header{
+  position: fixed !important;
+  background-color: #000000;
+  width: 100%;
+  left: 10px;
+  right: 10px;
+  top: 0;
+}
+input{
+  color: white;
+}
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    align-items: center;
 }
 
 button {
@@ -23,7 +36,7 @@ button {
     border:none;
     border-radius: 20px;
     height: 20px;
-    width: auto;
+    width: 90%;
     padding: 10px 10px;
 
     display: flex;
@@ -40,6 +53,8 @@ button {
     font-weight: 400;
     font-size:medium;
 }
+/* 
+FIN DEL ENCABEZADO */
 .icon{
     background-color: #E80024;
     border-radius: 50%;
@@ -54,6 +69,7 @@ button {
     font-weight: 550;
     font-family: Arial, sans-serif;
     font-size: larger;
+    margin-top: 33%;
 
 
     display: flex;
@@ -121,3 +137,37 @@ button {
   #cont-msj, .time{
     color: gray;
   }
+
+  /* PIE DE NAVEGACION */
+
+  #footer {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.footer2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  width: 100%;
+
+}
+
+.item2{
+    display: flex;
+    padding: 25px;
+}
+
+#avatar {
+  width: 30px; /* Ajusta el tamaño según tu imagen */
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}

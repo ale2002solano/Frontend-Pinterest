@@ -13,13 +13,12 @@
         <button class="active" onclick="activar(this)">Actualizaciones</button>
         <button class="active" onclick="activar(this)">Buzón de entrada</button>
     </nav>
-    </header><br>
-
-        <!-- BARRA BUSCAR -->
+    <!-- BARRA BUSCAR -->
     <div class="search-container">
         <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #787878;"></i></button>
         <input type="text" placeholder="Busca por nombre o correo" class="buscar">
     </div><br>
+</header>
 
         <!-- MENSAJE NUEVO -->
     <div class="crear">
@@ -63,6 +62,20 @@
     <p id="cont-msj">Envia un saludo👋</p>
   </div>
   <div class="time"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></div>
+
+  <footer id="footer">
+
+        <div class="footer2">
+
+            <div class="item2"><i class="fa-solid fa-house fa-lg"></i></div>
+            <div class="item2"><i class="fa-solid fa-magnifying-glass fa-lg"></i></div>
+            <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg"></i></div>
+            <div class="item2"><i class="fa-solid fa-comment-dots fa-lg"></i></div>
+            <div class="item2"><img src="../img/ini1.jpg" alt="" id="avatar"></div>
+
+        </div>
+      
+    </footer>
 
 
 

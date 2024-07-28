@@ -24,3 +24,7 @@ Route::get('/login', function () {
 Route::get('/mensajes', function () {
     return view('mensajeria');
 });
+
+Route::get('/tableros', function () {
+    return view('tableros');
+});
