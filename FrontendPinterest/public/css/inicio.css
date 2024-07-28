@@ -99,3 +99,6 @@ input{
 #blue{
     color: blue;
 }
+input[type="text"], input[type="password"]{
+    color: white;
+}
