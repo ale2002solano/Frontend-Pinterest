@@ -35,3 +35,11 @@ Route::get('/pines', function () {
 Route::get('/tableros', function () {
     return view('tableros');
 });
+
+Route::get('/actualizaciones', function () {
+    return view('actualizaciones');
+});
+
+Route::get('/feed', function () {
+    return view('feed');
+});
