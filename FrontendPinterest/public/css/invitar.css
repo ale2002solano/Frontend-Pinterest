@@ -1,0 +1,96 @@
+
+.message {
+    display: flex;
+    align-items: center;
+    background: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.message img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.message-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-content .name {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+    justify-content: start;
+}
+
+.message-content .text {
+    color: #ddd;
+}
+
+hr {
+    border: 0;
+    height: 1px !important;
+    background: #aeaeae;
+    margin: 10px 0;
+}
+.invite-button {
+    background-color: #393939;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.invite-button:hover {
+    background-color: #ff6347;
+}
+
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+.icon-label {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.de{
+    display: flex;
+    justify-content: space-between;
+}
+
+#colab{
+    margin: 10px;
+
+
+}

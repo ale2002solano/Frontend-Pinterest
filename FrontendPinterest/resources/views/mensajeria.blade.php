@@ -67,10 +67,10 @@
 
         <div class="footer2">
 
-            <div class="item2"><i class="fa-solid fa-house fa-lg"></i></div>
-            <div class="item2"><i class="fa-solid fa-magnifying-glass fa-lg"></i></div>
-            <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg"></i></div>
-            <div class="item2"><i class="fa-solid fa-comment-dots fa-lg"></i></div>
+            <div class="item2"><i class="fa-solid fa-house fa-lg" style="color: #808080;"></i></div>
+            <div class="item2"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #808080;"></i></div>
+            <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg" style="color: #808080;"></i></div>
+            <div class="item2"><i class="fa-solid fa-comment-dots fa-lg" style="color: #808080;"></i></div>
             <div class="item2"><img src="../img/ini1.jpg" alt="" id="avatar"></div>
 
         </div>

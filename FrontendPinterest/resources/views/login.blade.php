@@ -21,8 +21,6 @@
         <div class="foto"><img class="responsive" src="../img/ini2.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
         <div class="foto"><img class="responsive" src="../img/ini1.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
         <div class="foto"><img class="responsive" src="../img/ini4.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
-        <div class="foto"><img class="responsive" src="../img/ini5.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
-        <div class="foto"><img class="responsive" src="../img/ini6.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
     </div>
     <!-- Contenedor login -->
     <div class="contlog">

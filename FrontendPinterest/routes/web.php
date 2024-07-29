@@ -20,7 +20,7 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/mensajes', function () {
+Route::get('/mensajeria', function () {
     return view('mensajeria');
 });
 
@@ -32,10 +32,30 @@ Route::get('/compartir', function () {
     return view('compartir');
 });
 
-Route::get('/configuraciones', function () {
-    return view('configurciones');
+Route::get('/configuracion', function () {
+    return view('configuracion');
 });
 
 Route::get('/buscarideas', function () {
     return view('buscarideas');
+});
+
+Route::get('/invitar', function () {
+    return view('invitar');
+});
+
+Route::get('/pines', function () {
+    return view('pines');
+});
+
+Route::get('/tableros', function () {
+    return view('tableros');
+});
+
+Route::get('/actualizaciones', function () {
+    return view('actualizaciones');
+});
+
+Route::get('/feed', function () {
+    return view('feed');
 });
