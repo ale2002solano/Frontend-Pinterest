@@ -23,3 +23,7 @@ Route::get('/login', function () {
 Route::get('/mensajes', function () {
     return view('mensajeria');
 });
+
+Route::get('/creartablero', function () {
+    return view('creartablero');
+});
