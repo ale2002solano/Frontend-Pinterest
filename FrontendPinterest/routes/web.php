@@ -27,3 +27,15 @@ Route::get('/mensajes', function () {
 Route::get('/creartablero', function () {
     return view('creartablero');
 });
+
+Route::get('/compartir', function () {
+    return view('compartir');
+});
+
+Route::get('/configuraciones', function () {
+    return view('configurciones');
+});
+
+Route::get('/buscarideas', function () {
+    return view('buscarideas');
+});

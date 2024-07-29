@@ -1,0 +1,120 @@
+body {
+    background-color: #000;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.share-dialog {
+    background-color: #1c1c1e;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-button i {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 17px;
+    margin: 0;
+}
+
+.share-options {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 15px; /* Añade espacio uniforme entre los iconos */
+}
+
+.share-options .option {
+    flex: 0 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.share-options .option .icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.search-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea a la izquierda */
+    margin-bottom: 20px;
+}
+
+.search-icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.search-contacts i {
+    font-size: 16px; /* Tamaño reducido para el icono */
+}
+
+.contacts .contact {
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.avatar.bg-secondary {
+    background-color: #777;
+}
+
+.avatar.bg-info {
+    background-color: #2196F3; /* Azul para Ale Solano */
+}
+
+.btn-light-grey {
+    background-color: #b0b0b0;
+    color: #fff;
+}
