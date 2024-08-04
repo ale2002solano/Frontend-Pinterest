@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\FeedController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -59,3 +61,4 @@ Route::get('/actualizaciones', function () {
 Route::get('/feed', function () {
     return view('feed');
 });
+Route::get('/feed', [FeedController::class, 'index']);

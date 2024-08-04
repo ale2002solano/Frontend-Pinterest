@@ -26,6 +26,16 @@
    
     <div class="content" id="pin-container">
         <!-- Pines se cargarán aquí -->
+
+        @foreach($images as $image)
+        <div class="pin">
+            <img src="{{ asset('img/' . basename($image)) }}" alt="Image">
+            <div class="content">
+         
+                <p>Descripción del Pin</p>
+            </div>
+        </div>
+    @endforeach
     </div>
         
    <div class="notification">
@@ -49,6 +59,6 @@
       
     </footer>
 
-    <script src="{{ asset('js/feed.js') }}"></script>
+    <!--<script src="{{ asset('js/feed.js') }}"></script>-->
 </body>
 </html>

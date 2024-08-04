@@ -29,6 +29,49 @@ header {
     position: static;
 }
 
+
+
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */
+  }
+}
+
+.pin {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+}
+.pin:hover {
+  transform: scale(1.05);
+}
+.pin img {
+  width: 100%;
+  height: auto;
+}
+.pin .content {
+  padding: 10px;
+}
+
+
+
+.pin p {
+  font-family: Arial, sans-serif; 
+  font-weight: normal;
+  margin: 0; 
+}
 /* 
 FIN DEL ENCABEZADO */
 .icon{
