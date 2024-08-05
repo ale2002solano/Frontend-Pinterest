@@ -91,11 +91,12 @@
 
         <div class="footer2">
 
-            <div class="item2"><i class="fa-solid fa-house fa-lg" style="color: #808080;"></i></div>
-            <div class="item2"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #808080;"></i></div>
-            <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg" style="color: #808080;"></i></div>
-            <div class="item2"><i class="fa-solid fa-comment-dots fa-lg" style="color: #808080;"></i></div>
-            <div class="item2"><img src="../img/ini1.jpg" alt="" id="avatar"></div>
+          <div class="item2"> <a href="{{ url('/feed') }}"> <i class="fa-solid fa-house fa-lg"></i> </a> </div>
+            <div class="item2"><i class="fa-solid fa-magnifying-glass fa-lg"></i></div>
+            <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg"></i></div>
+            <div class="item2"> <a href="{{route('mensajeria')}}"> <i class="fa-solid fa-comment-dots fa-lg"></i> </a> </div>
+            <div class="item2"> <a href="{{route('configuracion')}}"> <img src="../img/ini1.jpg" alt="" id="avatar"> </a></div>
+
 
         </div>
       

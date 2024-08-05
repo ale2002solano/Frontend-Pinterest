@@ -104,13 +104,11 @@
 
         <div class="footer2">
 
-            <div class="item2"> </div>
-            <div class="item2"><i class="fa-solid fa-house"></i></div>
-            <div class="item2"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus"></i></div>
-            <div class="item2"><i class="fa-solid fa-comment-dots"></i></div>
-            <div class="item2">O</div>
-            <div class="item2"> </div>
+        <div class="item2"> <a href="{{ url('/feed') }}"> <i class="fa-solid fa-house fa-lg"></i> </a> </div>
+            <div class="item2"><i class="fa-solid fa-magnifying-glass fa-lg"></i></div>
+            <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg"></i></div>
+            <div class="item2"> <a href="{{route('mensajeria')}}"> <i class="fa-solid fa-comment-dots fa-lg"></i> </a> </div>
+            <div class="item2"> <a href="{{route('configuracion')}}"> O </a></div>
 
 
         </div>

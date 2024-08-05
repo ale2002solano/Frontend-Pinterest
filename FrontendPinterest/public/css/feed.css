@@ -277,3 +277,16 @@ FIN DEL ENCABEZADO */
 }
 
 /* aqui termina ventana modal*/
+
+a {
+  color: inherit; /* Hereda el color del elemento padre */
+  text-decoration: none; /* Quita el subrayado */
+}
+
+a:visited {
+  color: inherit; /* Mantiene el color del elemento padre */
+}
+
+.icon {
+  color: black; /* Color original del icono */
+}

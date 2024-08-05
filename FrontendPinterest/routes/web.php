@@ -28,7 +28,7 @@ Route::get('/mensajeria', function () {
 
 Route::get('/creartablero', function () {
     return view('creartablero');
-});
+})->name('creartablero');
 
 Route::get('/compartir', function () {
     return view('compartir');
@@ -36,7 +36,7 @@ Route::get('/compartir', function () {
 
 Route::get('/configuracion', function () {
     return view('configuracion');
-});
+})->name('configuracion');
 
 Route::get('/buscarideas', function () {
     return view('buscarideas');
@@ -56,9 +56,10 @@ Route::get('/tableros', function () {
 
 Route::get('/actualizaciones', function () {
     return view('actualizaciones');
-});
+})->name('actualizaciones');
 
 Route::get('/feed', function () {
     return view('feed');
 });
+
 Route::get('/feed', [FeedController::class, 'index']);
