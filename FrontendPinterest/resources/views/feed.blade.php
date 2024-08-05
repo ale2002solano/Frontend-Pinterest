@@ -44,6 +44,29 @@
    
   </div>
   <div class="time"></div>
+  
+  <div id="modalOverlay" class="modal-overlay">
+        <div id="modal" class="modal">
+            <div class="modal-header">
+                <button id="closeModalBtn" class="close-btn">X</button>
+                <h2>Comienza a crear ahora</h2>
+            </div>
+            <div class="casillas">
+                <div class="casilla2">
+                    <div class="contenido3"></div>
+                    <p>Nombre 1</p>
+                </div>
+                <div class="casilla2">
+                    <div class="contenido3"></div>
+                    <p>Nombre 2</p>
+                </div>
+                <div class="casilla2">
+                    <div class="contenido3"></div>
+                    <p>Nombre 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
   <footer id="footer">
 

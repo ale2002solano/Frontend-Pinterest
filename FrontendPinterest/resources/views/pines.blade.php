@@ -14,7 +14,7 @@
 
             <div class="ll" id="perfil-narvar" href="#Profile">O</div>
             <div class="ll" href="#Pines">Pines</div>
-            <div class="ll" href="#Tableros">Tableros</div>
+            <div class="ll" href="#Tableros"> <a href="{{route('tableros')}}"> Tableros </a></div>
             <div class="ll" ></div>
 
         </nav>
@@ -96,7 +96,7 @@
             <div class="item2"><i class="fa-solid fa-house"></i></div>
             <div class="item2"><i class="fa-solid fa-magnifying-glass"></i></div>
             <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus"></i></div>
-            <div class="item2"><i class="fa-solid fa-comment-dots"></i></div>
+            <div class="item2"><i class="fa-solid fa-comment-dots">  </i></div>
             <div class="item2">O</div>
             <div class="item2"> </div>
 

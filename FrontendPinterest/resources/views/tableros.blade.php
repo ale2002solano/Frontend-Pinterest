@@ -13,7 +13,7 @@
         <nav>
 
             <div class="ll" id="perfil-narvar" href="#Profile">O</div>
-            <div class="ll" href="#Pines">Pines</div>
+            <div class="ll" href="#Pines"> <a href="{{route('pines')}}"> Pines </a></div>
             <div class="ll" href="#Tableros">Tableros</div>
             <div class="ll" ></div>
 

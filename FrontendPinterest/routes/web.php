@@ -15,7 +15,7 @@ use App\Http\Controllers\FeedController;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('pines');
 });
 
 Route::get('/login', function () {
@@ -24,7 +24,7 @@ Route::get('/login', function () {
 
 Route::get('/mensajeria', function () {
     return view('mensajeria');
-});
+})->name('mensajeria');
 
 Route::get('/creartablero', function () {
     return view('creartablero');
@@ -48,11 +48,11 @@ Route::get('/invitar', function () {
 
 Route::get('/pines', function () {
     return view('pines');
-});
+})->name('pines');
 
 Route::get('/tableros', function () {
     return view('tableros');
-});
+})->name('tableros');
 
 Route::get('/actualizaciones', function () {
     return view('actualizaciones');
