@@ -39,7 +39,7 @@ Route::get('/configuracion', function () {
 })->name('configuracion');
 
 Route::get('/buscarideas', function () {
-    return view('buscarideas');
+    return view('buscarideas')->name('buscarideas');
 });
 
 Route::get('/invitar', function () {
@@ -72,3 +72,6 @@ Route::get('/contactos', function () {
 
 
 Route::get('/feed', [FeedController::class, 'index']);
+
+
+//CONSUMO DE LAS APIS CON GUZZLE

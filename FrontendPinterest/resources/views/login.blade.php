@@ -26,11 +26,14 @@
     <div class="contlog">
         <div class="logform">
         <p class="head">Te damos la bienvenida a Pinterest</p>
-            <form action="login" method="POST" id="logform">
+
+            <form action="route('login.post') }}" method="POST" id="logform">
+                @csrf
                 <input type="text" name="username" placeholder="Correo" required><br>
                 <input type="password" name="password" placeholder="Contraseña" required><br>
                 <input type="submit" value="Continuar" class="boton">
             </form>
+            
         </div>
         <div class="crear">
             <p>¿No tienes una cuenta?</p>
