@@ -174,6 +174,7 @@ FIN DEL ENCABEZADO */
 
 
 /* aqui empiza ventana modal*/
+/* Estilo de la Ventana Modal */
 #openModalBtn {
   padding: 10px 20px;
   font-size: 16px;
@@ -188,20 +189,19 @@ FIN DEL ENCABEZADO */
   background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
   display: none;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-end; /* Alinea la ventana modal al final de la vista */
 }
 
 .modal {
-  width: 100%;
-  height: 20%;
-  background-color: #333; /* Gris oscuro */
+  width: 100%; /* Abarca todo el ancho de la vista */
+  background-color: #2a2a2a;
   color: white;
+  border-radius: 35px 35px 0 0; /* Redondea las esquinas superiores */
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   position: relative;
 }
 
@@ -210,19 +210,30 @@ FIN DEL ENCABEZADO */
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .modal-header h2 {
   margin: 0;
-  flex-grow: 1;
+  font-size: 18px;
   text-align: center;
+  flex-grow: 1;
+  color: #ffffff;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .casillas {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly; /* Distribuye uniformemente los elementos */
   width: 100%;
-  height: 70%;
 }
 
 .casilla2 {
@@ -232,29 +243,33 @@ FIN DEL ENCABEZADO */
 }
 
 .contenido3 {
-  width: 80px;
-  height: 80px;
-  background-color: white;
-  border-radius: 5px;
-}
-
-.casilla2 p {
-  margin-top: 5px;
-}
-
-
-
-.close-btn {
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  background-color: #3b3b3b;
+  border-radius: 15px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.icono {
+  color: white;
+  font-size: 24px;
+}
+
+.casilla2 p {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin: 0;
+}
+
+.modal-swipe-bar {
+  width: 40px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin-top: 10px;
 }
 
 /* aqui termina ventana modal*/

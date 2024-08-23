@@ -1,61 +1,77 @@
+/* Estilos Generales */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #000;
     color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     position: relative;
+    height: 45vh; 
 }
 
 .header .bg-image {
     width: 100%;
-    height: auto;
+    height: 95%; 
+    object-fit: cover;
     opacity: 0.5;
+    position: relative; 
 }
 
 .search-wrapper {
-    top: 15px;
+    top: 25px; 
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    background-color: #000;
-    border-radius: 15px;
+    width: 95%;
+    background-color: #282828;
+    border-radius: 20px;
     padding: 3px 10px;
     display: flex;
     align-items: center;
+    position: absolute; 
 }
 
-.search-wrapper .search-icon, .search-wrapper .fa-camera, .search-wrapper .search-input::placeholder {
-    color: #b3b3b3; 
+.search-wrapper .search-icon, 
+.search-wrapper .fa-camera, 
+.search-wrapper .search-input::placeholder {
+    color: #c1c1c1; 
 }
 
 .search-wrapper .search-input {
     background-color: transparent;
     border: none;
-    color: #b3b3b3; 
+    color: #bdbdbd; 
     flex-grow: 1;
 }
 
 .overlay-text {
-    top: 50%;
+    top: 45%; 
     transform: translateY(-50%);
     font-size: 12px;
+    position: absolute;
+    width: 100%;
 }
 
 .overlay-text h2 {
     font-size: 16px;
+    color: #fff;
 }
 
 .dots {
-    margin-top: 10px;
+    margin-top: -15px; 
     margin-bottom: 5px; 
+    text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .dot {
-    height: 8px;  
-    width: 8px;   
+    height: 7px; 
+    width: 7px;   
     margin: 0 3px;  
     background-color: #bbb;
     border-radius: 50%;
@@ -67,17 +83,18 @@ body {
 }
 
 .main-content {
-    padding: 10px 20px; 
+    padding: 5px 20px; 
     text-align: center;
+    flex-grow: 1;
 }
 
 .ideas {
-    padding: 10px 0;
+    padding: 5px 0; 
 }
 
 .section-title {
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px; 
     color: #fff;
 }
 
@@ -89,14 +106,14 @@ body {
 }
 
 .ideas-container .idea {
-    width: 110px; 
-    height: 200px; 
+    width: 150px;
+    height: 250px; 
     background-color: #222;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     margin-right: 15px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .ideas-container .idea img {
@@ -105,67 +122,60 @@ body {
     object-fit: cover;
 }
 
-.overlay-circle {
-    bottom: -20px; 
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px; 
-    height: 40px; 
-    border-radius: 50%;
-    background-color: #b3b3b3; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.circle-img {
-    width: 40px; 
-    height: 40px; 
-    background-color: #b3b3b3; 
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.circle-text {
-    font-size: 16px; 
-    color: #fff;
-}
-
 .video-duration {
     top: 10px;
     left: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0);
     padding: 2px 5px;
-    border-radius: 3px;
+    border-radius: 100px;
     color: #fff;
     font-size: 0.75rem;
     font-weight: bold;
 }
 
-.footer {
-    background-color: #000;
-    padding: 10px 0;
-    text-align: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+#footer {
+    background-color: #000000;
     position: fixed;
-    bottom: 0;
     width: 100%;
-    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; 
 }
 
-.footer nav a {
-    color: #919191;
-    font-size: 1.5em;
+.footer2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.item2 a, .item2 i {
+    color: #ffffff;
+    font-size: 1.11em; 
     text-decoration: none;
 }
 
+#avatar {
+    width: 31px; 
+    height: 31px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .scrolling-content {
-    overflow-y: scroll;
-    height: calc(100vh - 70px); 
-    padding-bottom: 80px; 
+    overflow-y: auto;
+    flex-grow: 1;
+    padding-bottom: 80px;
 }
 
 .ideas-container-grid {
@@ -200,4 +210,121 @@ body {
     font-weight: bold;
     padding: 2px 5px; 
     border-radius: 5px; 
+    position: absolute;
+}
+
+/* Estilo de la Ventana Modal */
+#openModalBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
+    display: none;
+    justify-content: center;
+    align-items: flex-end; /* Alinea la ventana modal al final de la vista */
+}
+
+.modal {
+    width: 100%; /* Abarca todo el ancho de la vista */
+    height: 25%; /* Ocupa la mitad inferior de la pantalla */
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 35px 35px 0 0; /* Redondea las esquinas superiores */
+    padding: 10px 20px; /* Ajusta el padding para subir los elementos */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0;
+    border-bottom: none; /* Esta línea asegura que no haya borde inferior */
+  }
+  
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 0px; /* Añade un poco de margen izquierdo */
+    flex-grow: 1;
+    color: #ffffff;
+    margin-right: 25px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px; /* Manteniendo el tamaño original */
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0px; /* Mueve la "X" más cerca de la esquina */
+    margin-right: 45px;
+}
+
+.casillas {
+    display: flex;
+    justify-content: space-evenly; /* Distribuye uniformemente los elementos */
+    width: 100%;
+    margin-top: 10px; /* Ajusta la posición vertical de los iconos */
+}
+
+.casilla2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido3 {
+    width: 70px;
+    height: 70px;
+    background-color: #3b3b3b;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono {
+    color: white;
+    font-size: 24px;
+}
+
+.casilla2 p {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin: 0;
+}
+
+.modal-swipe-bar {
+    display: none; /* Oculta la línea */
+}
+
+/* Estilo de Enlaces */
+a {
+    color: inherit; /* Hereda el color del elemento padre */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+a:visited {
+    color: inherit; /* Mantiene el color del elemento padre */
+}
+
+.icon {
+    color: black; /* Color original del icono */
 }

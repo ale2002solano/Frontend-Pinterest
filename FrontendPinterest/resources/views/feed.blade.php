@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinterest Clone</title>
+    <title>Pinterest</title>
     
     <script src="https://kit.fontawesome.com/3cf485552f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/feed.css">
@@ -46,42 +46,51 @@
   <div class="time"></div>
   
   <div id="modalOverlay" class="modal-overlay">
-        <div id="modal" class="modal">
-            <div class="modal-header">
-                <button id="closeModalBtn" class="close-btn">X</button>
-                <h2>Comienza a crear ahora</h2>
+    <div id="modal" class="modal">
+        <div class="modal-header">
+            <button id="closeModalBtn" class="close-btn">&times;</button>
+            <h2>Empieza a crear ahora</h2>
+        </div>
+        <div class="casillas">
+            <div class="casilla2">
+                <div class="contenido3">
+                    <i class="fas fa-thumbtack icono"></i>
+                </div>
+                <p>Pin</p>
             </div>
-            <div class="casillas">
-                <div class="casilla2">
-                    <div class="contenido3"></div>
-                    <p>Nombre 1</p>
+            <div class="casilla2">
+                <div class="contenido3">
+                    <i class="fas fa-cut icono"></i>
                 </div>
-                <div class="casilla2">
-                    <div class="contenido3"></div>
-                    <p>Nombre 2</p>
+                <p>Collage</p>
+            </div>
+            <div class="casilla2">
+                <div class="contenido3">
+                    <i class="fas fa-columns icono"></i>
                 </div>
-                <div class="casilla2">
-                    <div class="contenido3"></div>
-                    <p>Nombre 3</p>
-                </div>
+                <p>Tablero</p>
             </div>
         </div>
+        <div class="modal-swipe-bar"></div>
+    </div>
     </div>
 
-  <footer id="footer">
+
+
+    <footer id="footer">
 
         <div class="footer2">
 
-        <div class="item2"> <a href="{{ url('/feed') }}"> <i class="fa-solid fa-house fa-lg"></i> </a> </div>
-            <div class="item2"><i class="fa-solid fa-magnifying-glass fa-lg"></i></div>
+            <div class="item2"> <a href="{{ url('/feed') }}"> <i class="fa-solid fa-house fa-lg"></i> </a> </div>
+            <div class="item2"> <a href="{{ url('/buscarideas') }}"> <i class="fa-solid fa-magnifying-glass fa-lg"></i></a></div>
             <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg"></i></div>
             <div class="item2"> <a href="{{route('mensajeria')}}"> <i class="fa-solid fa-comment-dots fa-lg"></i> </a> </div>
-            <div class="item2"> <a href="{{route('configuracion')}}"> <img src="../img/ini1.jpg" alt="" id="avatar"> </a></div>
+            <div class="item2"> <a href="{{route('tableros')}}"> <img src="../img/ini1.jpg" alt="" id="avatar"> </a></div>
 
         </div>
       
     </footer>
 
-    <!--<script src="{{ asset('js/feed.js') }}"></script>-->
+    <script src="{{ asset('js/feed.js') }}"></script>
 </body>
 </html>

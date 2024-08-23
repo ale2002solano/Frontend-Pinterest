@@ -13,37 +13,29 @@
         <button class="active" onclick="activar(this)">Actualizaciones</button>
         <button class="active" onclick="activar(this)">Buzón de entrada</button>
     </nav>
-   
 </header>
 
 <div class="content" id="pin-container">
     <!-- Pines se cargarán aquí -->
 </div>
 
-   <p class="txtdiv">Contactos</p>
-   <div class="notification">
-  <div class="avatar" ></div>
-  <div class="info">
-   
-  </div>
-  <div class="time"></div>
+<p class="txtdiv">Contactos</p>
+<div class="notification">
+    <div class="avatar"></div>
+    <div class="info"></div>
+    <div class="time"></div>
+</div>
 
-  <footer id="footer">
+<footer id="footer">
+    <div class="footer2">
+        <div class="item2"> <a href="{{ url('/feed') }}"> <i class="fa-solid fa-house fa-lg"></i> </a> </div>
+        <div class="item2"> <a href="{{ url('/buscarideas') }}"> <i class="fa-solid fa-magnifying-glass fa-lg"></i></a></div>
+        <div class="item2"><i id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg"></i></div>
+        <div class="item2"> <a href="{{route('mensajeria')}}"> <i class="fa-solid fa-comment-dots fa-lg"></i> </a> </div>
+        <div class="item2"> <a href="{{route('tableros')}}"> <img src="../img/ini1.jpg" alt="" id="avatar"> </a></div>
+    </div>
+</footer>
 
-        <div class="footer2">
-
-            <div class="item2"><i class="fa-solid fa-house fa-lg"></i></div>
-            <div class="item2"><i class="fa-solid fa-magnifying-glass fa-lg"></i></div>
-            <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg"></i></div>
-            <div class="item2"><i class="fa-solid fa-comment-dots fa-lg"></i></div>
-            <div class="item2"><img src="../img/ini1.jpg" alt="" id="avatar"></div>
-
-        </div>
-      
-    </footer>
-
-
-
-  <script src="../js/act.js"></script>
+<script src="../js/act.js"></script>
 </body>
 </html>

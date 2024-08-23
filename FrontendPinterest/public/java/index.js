@@ -22,8 +22,8 @@ const renderizarfotos = () => {
             </div>
 
             <div id="describir">
-                 <div>nise que poner</div>
-                 <div>tampoc</div>
+                 <div>Ropa</div>
+                 <div>2 Pines</div>
 
             </div>
 
