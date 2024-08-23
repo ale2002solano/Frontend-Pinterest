@@ -62,3 +62,6 @@ Route::get('/feed', function () {
     return view('feed');
 });
 Route::get('/feed', [FeedController::class, 'index']);
+
+
+//CONSUMO DE LAS APIS CON GUZZLE
