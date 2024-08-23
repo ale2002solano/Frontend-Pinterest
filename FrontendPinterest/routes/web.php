@@ -39,7 +39,7 @@ Route::get('/configuracion', function () {
 })->name('configuracion');
 
 Route::get('/buscarideas', function () {
-    return view('buscarideas')->name('buscarideas');
+    return view('buscarideas');
 });
 
 Route::get('/invitar', function () {
