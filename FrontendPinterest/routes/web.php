@@ -15,7 +15,7 @@ use App\Http\Controllers\FeedController;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('pines');
 });
 
 Route::get('/login', function () {
@@ -24,11 +24,11 @@ Route::get('/login', function () {
 
 Route::get('/mensajeria', function () {
     return view('mensajeria');
-});
+})->name('mensajeria');
 
 Route::get('/creartablero', function () {
     return view('creartablero');
-});
+})->name('creartablero');
 
 Route::get('/compartir', function () {
     return view('compartir');
@@ -36,7 +36,7 @@ Route::get('/compartir', function () {
 
 Route::get('/configuracion', function () {
     return view('configuracion');
-});
+})->name('configuracion');
 
 Route::get('/buscarideas', function () {
     return view('buscarideas')->name('buscarideas');
@@ -48,19 +48,20 @@ Route::get('/invitar', function () {
 
 Route::get('/pines', function () {
     return view('pines');
-});
+})->name('pines');
 
 Route::get('/tableros', function () {
     return view('tableros');
-});
+})->name('tableros');
 
 Route::get('/actualizaciones', function () {
     return view('actualizaciones');
-});
+})->name('actualizaciones');
 
 Route::get('/feed', function () {
     return view('feed');
 });
+
 Route::get('/feed', [FeedController::class, 'index']);
 
 
