@@ -71,8 +71,9 @@ Route::get('/contactos', function () {
 });
 
 
-Route::get('/feed', [FeedController::class, 'index']);
+Route::get('/feed', [FeedController::class, 'index'])->name('feed');
 
 
 //CONSUMO DE LAS APIS CON GUZZLE
+
 Route::post('/login',[LoginController::class, 'login'])->name('login.post');

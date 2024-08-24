@@ -82,6 +82,7 @@ input{
     background: none;
     border:3px solid gray;
     font-weight: 700;
+    color: aliceblue !important;
 }
 
 .head{

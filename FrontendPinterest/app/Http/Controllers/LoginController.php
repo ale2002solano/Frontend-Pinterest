@@ -12,22 +12,17 @@ use GuzzleHttp\Exception\GuzzleException;
 class LoginController extends Controller
 {
     //
-    public function index(){
-        return view('login');//USAMOS EL COMPACT PARA PASAR LA VARIABLE A LA VISTA
-    }
-
-    //LOGIN
     public function login(Request $request){
-        $correo = $request->input('email');
-        $contrasena = $request->input('password');
+        $correo = $request->input('correo');
+        $contrasenia = $request->input('contrasenia');
     
-        if (!$correo || !$contrasena) {
+        if (!$correo || !$contrasenia) {
             return response()->json(['message' => 'Es necesario que ingreses la contraseña y el correo'], 400);
         }
     
         try {
-            $cliente = new \GuzzleHttp\Client([
-                'base_uri' => 'http://localhost:8080/api/usuarios/', // Cambia la URL base
+            $client = new \GuzzleHttp\Client([
+                'base_uri' => 'http://localhost:8080/api/usuarios/',
                 'timeout' => 10.0,
                 'headers' => [
                     'Accept' => 'application/json',
@@ -35,48 +30,32 @@ class LoginController extends Controller
                 ]
             ]);
     
-            $response = $cliente->post('login', [
+            $response = $client->post('login', [
                 'json' => [
                     'correo' => $correo,
-                    'contrasena' => $contrasena
+                    'contrasenia' => $contrasenia
                 ]
             ]);
     
             $statusCode = $response->getStatusCode();
-            $data = json_decode($response->getBody(), true);
+            $responseBody = $response->getBody()->getContents();
+            $data = json_decode($responseBody, true);
     
-            if ($statusCode == 200 && isset($data['codigoUsuario']) && !empty($data['codigoUsuario'])) {
-                $nombreCompleto = $data['nombreUsuario']; // Asegúrate de que estos campos existan en la respuesta
-                $origenes = $this->obtenerOrigenes();
-                $codigoUsuario = $data['codigoUsuario'];
-                session([
-                    'nombre_completo' => $nombreCompleto,
-                    'origenes' => $origenes,
-                    'codigoUsuario' => $codigoUsuario,
-                    'urlPerfil' => $data['urlPerfil'],
-                    'fechaNacimiento' => $data['fechaNacimiento'],
-                    'genero' => $data['genero']['nombreGenero'],
-                    'idioma' => $data['idioma']['nombreIdioma'],
-                    'lugar' => $data['lugar']['nombreLugar']
-                ]);
-    
-                return view('usuario', [
-                    'nombre_completo' => $nombreCompleto,
-                    'origenes' => $origenes,
-                    'codigoUsuario' => $codigoUsuario,
-                    'urlPerfil' => $data['urlPerfil'],
-                    'fechaNacimiento' => $data['fechaNacimiento'],
-                    'genero' => $data['genero']['nombreGenero'],
-                    'idioma' => $data['idioma']['nombreIdioma'],
-                    'lugar' => $data['lugar']['nombreLugar']
-                ]);
+            // Revisión del mensaje para ser más flexible en la comparación
+            if ($statusCode == 200 && isset($data['message']) && stripos($data['message'], 'Login exitoso') !== false) {
+                return redirect()->route('feed');
             } else {
-                return 'No existe este perfil';
+                return response()->json(['message' => 'No existe este perfil'], 404);
             }
-        } catch (GuzzleException $e) {
+        } catch (\GuzzleHttp\Exception\RequestException $e) {
             return response()->json(['message' => 'Error al conectar con el servidor'], 500);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Ocurrió un error inesperado'], 500);
         }
     }
+    
+
+        
 
     
 }
