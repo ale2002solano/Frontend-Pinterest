@@ -225,19 +225,19 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: none;
     justify-content: center;
-    align-items: flex-end; /* Alinea la ventana modal al final de la vista */
+    align-items: flex-end; 
 }
 
 .modal {
-    width: 100%; /* Abarca todo el ancho de la vista */
-    height: 25%; /* Ocupa la mitad inferior de la pantalla */
+    width: 100%; 
+    height: 25%; 
     background-color: #2a2a2a;
     color: white;
-    border-radius: 35px 35px 0 0; /* Redondea las esquinas superiores */
-    padding: 10px 20px; /* Ajusta el padding para subir los elementos */
+    border-radius: 35px 35px 0 0; 
+    padding: 10px 20px; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -251,15 +251,15 @@ body {
     width: 100%;
     align-items: center;
     margin-bottom: 0;
-    border-bottom: none; /* Esta línea asegura que no haya borde inferior */
+    border-bottom: none; 
   }
   
 
 .modal-header h2 {
     margin: 0;
     font-size: 18px;
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin-left: 0px; /* Añade un poco de margen izquierdo */
+    text-align: left; 
+    margin-left: 0px; 
     flex-grow: 1;
     color: #ffffff;
     margin-right: 25px;
@@ -269,18 +269,18 @@ body {
     background: none;
     border: none;
     color: white;
-    font-size: 40px; /* Manteniendo el tamaño original */
+    font-size: 40px; 
     font-weight: bold;
     cursor: pointer;
-    margin-left: 0px; /* Mueve la "X" más cerca de la esquina */
+    margin-left: 0px; 
     margin-right: 45px;
 }
 
 .casillas {
     display: flex;
-    justify-content: space-evenly; /* Distribuye uniformemente los elementos */
+    justify-content: space-evenly; 
     width: 100%;
-    margin-top: 10px; /* Ajusta la posición vertical de los iconos */
+    margin-top: 10px; 
 }
 
 .casilla2 {
@@ -312,19 +312,19 @@ body {
 }
 
 .modal-swipe-bar {
-    display: none; /* Oculta la línea */
+    display: none; 
 }
 
-/* Estilo de Enlaces */
+
 a {
-    color: inherit; /* Hereda el color del elemento padre */
-    text-decoration: none; /* Quita el subrayado */
+    color: inherit; 
+    text-decoration: none; 
 }
 
 a:visited {
-    color: inherit; /* Mantiene el color del elemento padre */
+    color: inherit; 
 }
 
 .icon {
-    color: black; /* Color original del icono */
+    color: black; 
 }
