@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\FeedController;
+use App\Http\Controllers\MensajeriaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use App\Http\Controllers\FeedController;
 |
 */
 Route::get('/', function () {
-    return view('pines');
+    return view('login');
 });
 
 Route::get('/login', function () {
@@ -70,12 +71,16 @@ Route::get('/contactos', function () {
     return view('contactos');
 });
 
-Route::get('/crearpin', function () {
-    return view('crearpin');
+Route::get('/prueba', function () {
+    return view('prueba');
 });
 
 
-Route::get('/feed', [FeedController::class, 'index']);
+Route::get('/feed', [FeedController::class, 'index'])->name('feed');
+
+
 
 
 //CONSUMO DE LAS APIS CON GUZZLE
+
+Route::post('/login',[LoginController::class, 'login'])->name('login.post');

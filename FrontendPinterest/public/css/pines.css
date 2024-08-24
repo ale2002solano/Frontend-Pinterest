@@ -31,6 +31,28 @@ header nav a {
     padding: 5px;
 }
 
+@media only screen and (device-width: 414px) and 
+(device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+.contfondo {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    grid-auto-rows:min-content(100px,auto);
+    color: white;
+    padding: 10px;
+        grid-auto-rows: auto;
+        grid-gap: 10px;
+        grid-auto-flow: dense;
+        position: static;
+}
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
 #footer {
     background-color: #000;
     padding: 10px 0;
