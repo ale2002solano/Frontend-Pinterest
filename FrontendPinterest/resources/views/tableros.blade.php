@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/3cf485552f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+
 </head>
 <body>
     <header>
@@ -64,8 +65,8 @@
             </div>
 
             <div id="describir">
-                 <div>nise que poner</div>
-                 <div>tampoc</div>
+                 <div>Ropa</div>
+                 <div>55 Pines</div>
 
             </div>
 
@@ -83,16 +84,16 @@
             </div>
             <div class="casillas">
                 <div class="casilla2">
-                    <div class="contenido3"></div>
-                    <p>Nombre 1</p>
+                    <div class="contenido3"><i class="fa-solid fa-thumbtack" style="color: #474747;"></i></i></div>
+                    <p>Pin</p>
                 </div>
                 <div class="casilla2">
-                    <div class="contenido3"></div>
-                    <p>Nombre 2</p>
+                    <div class="contenido3"><i class="fa-solid fa-house fa-lg"></i></div>
+                    <p>Collage</p>
                 </div>
                 <div class="casilla2">
-                    <div class="contenido3"></div>
-                    <p>Nombre 3</p>
+                    <div class="contenido3"><i class="fa-solid fa-house fa-lg"></i></div>
+                    <p>Tablero</p>
                 </div>
             </div>
         </div>
@@ -108,7 +109,7 @@
             <div class="item2"><i class="fa-solid fa-magnifying-glass fa-lg"></i></div>
             <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg"></i></div>
             <div class="item2"> <a href="{{route('mensajeria')}}"> <i class="fa-solid fa-comment-dots fa-lg"></i> </a> </div>
-            <div class="item2"> <a href="{{route('configuracion')}}"> O </a></div>
+            <div class="item2"> <a href="{{route('tableros')}}"> O </a></div>
 
 
         </div>

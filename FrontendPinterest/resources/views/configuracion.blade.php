@@ -103,15 +103,21 @@
                 </ul>
             </div>
         </div>
-        <div class="footer bg-black py-2 fixed-bottom">
-            <nav class="d-flex justify-content-around">
-                <a href="#" class="text-muted"><i class="fas fa-home"></i></a>
-                <a href="#" class="text-muted"><i class="fas fa-search"></i></a>
-                <a href="#" class="text-muted"><i class="fas fa-plus"></i></a>
-                <a href="#" class="text-muted"><i class="fas fa-comment-dots"></i></a>
-                <a href="#" class="text-muted"><i class="fas fa-user"></i></a>
-            </nav>
-        </div>
+        <footer id="footer">
+
+            <div class="footer2">
+
+                <div class="item2"> <a href="{{ url('/feed') }}"> <i class="fa-solid fa-house fa-lg"></i> </a> </div>
+                <div class="item2"> <a href="{{ url('/buscarideas') }}"> <i class="fa-solid fa-magnifying-glass fa-lg"></i></a></div>
+                <div class="item2"><i   id="openModalBtn" class="fa-duotone fa-solid fa-plus fa-lg"></i></div>
+                <div class="item2"> <a href="{{route('mensajeria')}}"> <i class="fa-solid fa-comment-dots fa-lg"></i> </a> </div>
+                <div class="item2"> <a href="{{route('tableros')}}"> <img src="../img/ini1.jpg" alt="" id="avatar"> </a></div>
+
+
+            </div>
+      
+        </footer>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

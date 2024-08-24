@@ -39,7 +39,7 @@ Route::get('/configuracion', function () {
 })->name('configuracion');
 
 Route::get('/buscarideas', function () {
-    return view('buscarideas')->name('buscarideas');
+    return view('buscarideas');
 });
 
 Route::get('/invitar', function () {
@@ -61,6 +61,15 @@ Route::get('/actualizaciones', function () {
 Route::get('/feed', function () {
     return view('feed');
 });
+
+Route::get('/mensajenuevo', function () {
+    return view('mensajenuevo');
+});
+
+Route::get('/contactos', function () {
+    return view('contactos');
+});
+
 
 Route::get('/feed', [FeedController::class, 'index']);
 
