@@ -29,11 +29,11 @@
 
             <form action="route('login.post') }}" method="POST" id="logform">
                 @csrf
-                <input type="text" name="username" placeholder="Correo" required><br>
+                <input type="email" name="username" placeholder="Correo" required><br>
                 <input type="password" name="password" placeholder="Contraseña" required><br>
                 <input type="submit" value="Continuar" class="boton">
             </form>
-            
+
         </div>
         <div class="crear">
             <p>¿No tienes una cuenta?</p>

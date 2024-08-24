@@ -66,3 +66,4 @@ Route::get('/feed', [FeedController::class, 'index']);
 
 
 //CONSUMO DE LAS APIS CON GUZZLE
+Route::post('/login',[LoginController::class, 'login'])->name('login.post');
