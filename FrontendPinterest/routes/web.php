@@ -70,6 +70,10 @@ Route::get('/contactos', function () {
     return view('contactos');
 });
 
+Route::get('/prueba', function () {
+    return view('prueba');
+});
+
 
 Route::get('/feed', [FeedController::class, 'index'])->name('feed');
 
