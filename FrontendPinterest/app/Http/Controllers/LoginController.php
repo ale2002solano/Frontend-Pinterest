@@ -36,16 +36,20 @@ class LoginController extends Controller
                     'contrasenia' => $contrasenia
                 ]
             ]);
-    
+
             $statusCode = $response->getStatusCode();
             $responseBody = $response->getBody()->getContents();
             $data = json_decode($responseBody, true);
     
-            // Revisión del mensaje para ser más flexible en la comparación
-            if ($statusCode == 200 && isset($data['message']) && stripos($data['message'], 'Login exitoso') !== false) {
+            $statusCode = $response->getStatusCode();
+    
+            // Basado en el código de estado HTTP
+            if ($statusCode == 200) {
+                
+                Session::put('codigo_usuario', $data['codigo_usuario']);
                 return redirect()->route('feed');
             } else {
-                return response()->json(['message' => 'No existe este perfil'], 404);
+                return response()->json(['message' => 'No existe este perfil o credenciales incorrectas'], 404);
             }
         } catch (\GuzzleHttp\Exception\RequestException $e) {
             return response()->json(['message' => 'Error al conectar con el servidor'], 500);

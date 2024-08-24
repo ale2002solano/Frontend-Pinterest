@@ -11,10 +11,8 @@
 <body>
     <header>
         <nav>
-            <div class="ll" id="perfil-narvar" href="#Profile">O</div>
             <div class="ll" href="#Pines">Pines</div>
             <div class="ll" href="#Tableros"> <a href="{{route('tableros')}}"> Tableros </a></div>
-            <div class="ll"></div>
         </nav>
     </header>
 
@@ -33,23 +31,11 @@
         <button>Creados por ti</button>
     </div>
 
-    <div class="container">
-        <div class="contenedor" id="westcol">
-            <div class="columna" id="west">
-                <div class="casilla pequena">Casilla 1</div>
-                <div class="casilla mediana">Casilla 2</div>
-                <div class="casilla grande">Casilla 3</div>
-                <div class="casilla pequena">Casilla 4</div>
-                <div class="casilla mediana">Casilla 5</div>
-                <div class="casilla grande">Casilla 6</div>
-                <div class="casilla pequena">Casilla 7</div>
-                <div class="casilla mediana">Casilla 8</div>
-                <div class="casilla grande">Casilla 9</div>
-                <div class="casilla pequena">Casilla 10</div>
-            </div>
-            <div class="columna" id="west2">Columna 2</div>
-            <div class="columna" id="west3">Columna 3</div>
-        </div>
+    <div class="contfondo">
+        <div class="foto"><img class="responsive" src="../img/ini3.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
+        <div class="foto"><img class="responsive" src="../img/ini2.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
+        <div class="foto"><img class="responsive" src="../img/ini1.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
+        <div class="foto"><img class="responsive" src="../img/ini4.jpg" alt=""><div class="descp"><div class="user"><i class="fa-solid fa-circle-user"></i> Username</div><i class="fa-solid fa-ellipsis"></i></div></div>
     </div>
 
     <div id="modalOverlay" class="modal-overlay">

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\FeedController;
+use App\Http\Controllers\MensajeriaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use App\Http\Controllers\FeedController;
 |
 */
 Route::get('/', function () {
-    return view('pines');
+    return view('login');
 });
 
 Route::get('/login', function () {
@@ -72,6 +73,8 @@ Route::get('/contactos', function () {
 
 
 Route::get('/feed', [FeedController::class, 'index'])->name('feed');
+
+
 
 
 //CONSUMO DE LAS APIS CON GUZZLE
