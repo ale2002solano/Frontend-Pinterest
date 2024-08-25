@@ -1,0 +1,150 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-muted {
+    color: #aaa !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.header-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-container h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+
+.content-section {
+    margin-top: 50px;
+    flex-grow: 1;
+}
+
+.text-center {
+    margin-bottom: 30px;
+}
+
+.text-center .pin-placeholder {
+    border-radius: 25px;
+    position: relative;
+    width: 120px; 
+    height: 200px; 
+    margin: 0 auto;
+    background-color: #ccc; 
+}
+
+.text-center .pin-placeholder i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #888; 
+    border-radius: 50%;
+    padding: 5px;
+    color: #fff; 
+    font-size: 0.75rem;
+}
+
+
+.form-label {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+hr {
+    margin: 0;
+    border: 0.5px solid #444;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mb-3, .mb-4 {
+    margin-bottom: 1rem !important;
+}
+
+.border-bottom .text-white {
+    font-weight: 500;
+}
+
+.border-bottom .text-muted {
+    font-weight: 400;
+}
+
+
+.align-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px; 
+    border-bottom: 0.5px solid #444;
+}
+
+
+footer {
+    background-color: #000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+footer .container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer .d-flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .d-flex .rounded-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .btn-danger {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 20px;
+}

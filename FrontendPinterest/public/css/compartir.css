@@ -52,7 +52,7 @@ h1 {
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    gap: 15px; /* Añade espacio uniforme entre los iconos */
+    gap: 15px; 
 }
 
 .share-options .option {
@@ -74,7 +74,7 @@ h1 {
 .search-contacts {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Alinea a la izquierda */
+    justify-content: flex-start; 
     margin-bottom: 20px;
 }
 
@@ -85,7 +85,7 @@ h1 {
 }
 
 .search-contacts i {
-    font-size: 16px; /* Tamaño reducido para el icono */
+    font-size: 16px; 
 }
 
 .contacts .contact {
@@ -111,7 +111,7 @@ h1 {
 }
 
 .avatar.bg-info {
-    background-color: #2196F3; /* Azul para Ale Solano */
+    background-color: #2196F3; 
 }
 
 .btn-light-grey {
