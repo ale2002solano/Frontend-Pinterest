@@ -10,9 +10,11 @@
 <body style="background-color: black; margin: 15px;">
 <header>
     <nav>
-        <button class="active" onclick="activar(this)">Actualizaciones</button>
-        <button class="active" onclick="activar(this)">Buzón de entrada</button>
+        <button class="active" onclick="window.location.href='{{ url('/actualizaciones') }}'">Actualizaciones</button>
+        <button class="active" onclick="window.location.href='{{ url('/mensajeria') }}'">Buzón de entrada</button>
     </nav>
+
+
     <!-- BARRA BUSCAR -->
     <div class="search-container">
         <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #787878;"></i></button>
@@ -21,10 +23,11 @@
 </header>
 
         <!-- MENSAJE NUEVO -->
-    <div class="crear">
-        <button class="icon"><i class="fa-solid fa-pen-to-square fa-lg" style="color: #ffffff;"></i></button>
-        <div style="padding: 15px;">Mensaje nuevo</div>
-    </div>
+        <div class="crear" onclick="window.location.href='{{ url('/mensajenuevo') }}'">
+            <button class="icon"><i class="fa-solid fa-pen-to-square fa-lg" style="color: #ffffff;"></i></button>
+            <div style="padding: 15px;">Mensaje nuevo</div>
+        </div>
+
 
     <!-- SOLICITUDES -->
     <br><p class="txtdiv">Solicitudes</p>
@@ -44,14 +47,15 @@
 
   <!-- MENSAJES -->
   <p class="txtdiv">Mensajes</p>
-  <div class="notification">
-  <div class="avatar" style="background-image:url('../img/ini1.jpg'); background-size: cover;"></div>
-  <div class="info">
+    <div class="notification">
+    <div class="avatar" style="background-image:url('../img/ini1.jpg'); background-size: cover;" onclick="window.location.href='{{ url('/contactos') }}'"></div>
+    <div class="info">
     <p id="username">Valeria Padilla</p>
     <p id="cont-msj">Hola ❤️</p>
-  </div>
-  <div class="time">Hace 2 minutos</div>
-</div>
+    </div>
+    <div class="time">Hace 2 minutos</div>
+    </div>
+
 
   <!-- CONTACTOS -->
    <p class="txtdiv">Contactos</p>
@@ -72,19 +76,19 @@
         </div>
         <div class="casillas">
             <div class="casilla2">
-                <div class="contenido3">
+                <div class="contenido3" onclick="window.location.href='{{ url('/crearpin') }}'">
                     <i class="fas fa-thumbtack icono"></i>
                 </div>
                 <p>Pin</p>
             </div>
             <div class="casilla2">
-                <div class="contenido3">
+                <div class="contenido3" onclick="window.location.href='{{ url('/crearcollage') }}'">
                     <i class="fas fa-cut icono"></i>
                 </div>
                 <p>Collage</p>
             </div>
             <div class="casilla2">
-                <div class="contenido3">
+                <div class="contenido3" onclick="window.location.href='{{ url('/creartablero') }}'">
                     <i class="fas fa-columns icono"></i>
                 </div>
                 <p>Tablero</p>
@@ -92,7 +96,8 @@
         </div>
         <div class="modal-swipe-bar"></div>
     </div>
-    </div>
+ </div>
+
 
     <footer id="footer">
 

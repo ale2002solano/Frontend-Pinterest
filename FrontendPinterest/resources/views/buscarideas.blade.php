@@ -134,35 +134,36 @@
         </div>
         
         <!-- Modal -->
-        <div id="modalOverlay" class="modal-overlay">
-            <div id="modal" class="modal">
-                <div class="modal-header">
-                    <button id="closeModalBtn" class="close-btn">&times;</button>
-                    <h2>Empieza a crear ahora</h2>
-                </div>
-                <div class="casillas">
-                    <div class="casilla2">
-                        <div class="contenido3">
-                            <i class="fas fa-thumbtack icono"></i>
-                        </div>
-                        <p>Pin</p>
-                    </div>
-                    <div class="casilla2">
-                        <div class="contenido3">
-                            <i class="fas fa-cut icono"></i>
-                        </div>
-                        <p>Collage</p>
-                    </div>
-                    <div class="casilla2">
-                        <div class="contenido3">
-                            <i class="fas fa-columns icono"></i>
-                        </div>
-                        <p>Tablero</p>
-                    </div>
-                </div>
-                <div class="modal-swipe-bar"></div>
+            <div id="modalOverlay" class="modal-overlay">
+        <div id="modal" class="modal">
+            <div class="modal-header">
+                <button id="closeModalBtn" class="close-btn">&times;</button>
+                <h2>Empieza a crear ahora</h2>
             </div>
+            <div class="casillas">
+                <div class="casilla2">
+                    <div class="contenido3" onclick="window.location.href='{{ url('/crearpin') }}'">
+                        <i class="fas fa-thumbtack icono"></i>
+                    </div>
+                    <p>Pin</p>
+                </div>
+                <div class="casilla2">
+                    <div class="contenido3" onclick="window.location.href='{{ url('/crearcollage') }}'">
+                        <i class="fas fa-cut icono"></i>
+                    </div>
+                    <p>Collage</p>
+                </div>
+                <div class="casilla2">
+                    <div class="contenido3" onclick="window.location.href='{{ url('/creartablero') }}'">
+                        <i class="fas fa-columns icono"></i>
+                    </div>
+                    <p>Tablero</p>
+                </div>
+            </div>
+            <div class="modal-swipe-bar"></div>
         </div>
+    </div>
+
 
         <!-- Footer Section -->
         <footer id="footer" class="mt-auto">

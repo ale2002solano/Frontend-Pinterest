@@ -13,7 +13,8 @@
     <header>
         <nav>
 
-            <div class="ll" id="perfil-narvar" href="#Profile">O</div>
+            <div class="ll" id="perfil-narvar" onclick="window.location.href='{{ url('/configuracion') }}'">O</div>
+
             <div class="ll" href="#Pines"> <a href="{{route('pines')}}"> Pines </a></div>
             <div class="ll" href="#Tableros">Tableros</div>
             <div class="ll" ></div>
@@ -22,14 +23,14 @@
     </header>
 
     <div class="post-nav">
-        <div class="search-box">
-            <input type="text" placeholder="Buscar...">
-        </div>
-        <div class="other-box">
-            <i class="fa-solid fa-plus"></i>
-        </div>
-
+    <div class="search-box">
+        <input type="text" placeholder="Buscar...">
     </div>
+    <div class="other-box">
+        <i class="fa-solid fa-plus" onclick="window.location.href='{{ url('/compartir') }}'"></i>
+    </div>
+    </div>
+
 
 
     <div class="flex-container">

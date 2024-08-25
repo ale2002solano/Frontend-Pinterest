@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Tablero</title>
     <link rel="stylesheet" href="../css/mensajenuevo.css">
-    <script src="https://kit.fontawesome.com/3cf485552f.js" crossorigin="anonymous"></script> <!-- Asegúrate de incluir FontAwesome -->
+    <script src="https://kit.fontawesome.com/3cf485552f.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <div class="content">
         <div class="menu">
             <header>
-                <!-- Reemplaza la "X" con una flecha "<" usando FontAwesome -->
                 <button class="close"><i class="fas fa-chevron-left" style="color: white;"></i></button>
                 <h1>Mensaje nuevo</h1>
                 <button class="next">Siguiente</button>
