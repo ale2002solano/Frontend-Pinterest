@@ -27,11 +27,10 @@
         <div class="logform">
         <p class="head">Te damos la bienvenida a Pinterest</p>
 
-            <form action="{{ route('login.post') }}" method="POST" id="logform">
-                @csrf
+            <form action="" method="" id="logform">
                 <input type="email" name="correo" placeholder="Correo" required><br>
                 <input type="password" name="contrasenia" placeholder="Contraseña" required><br>
-                <input type="submit" value="Continuar" class="boton">
+                <input type="button" value="Continuar" class="boton" onclick="redirectToFeed()">
             </form>
 
         </div>
@@ -47,6 +46,13 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
+
+
+<script>
+        function redirectToFeed() {
+            window.location.href = "{{ url('/feed') }}";
+        }
     </script>
 </body>
 
