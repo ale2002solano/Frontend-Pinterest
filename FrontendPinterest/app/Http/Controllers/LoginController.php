@@ -8,6 +8,7 @@ use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\ClienteController;
 use GuzzleHttp\Exception\GuzzleException;
+use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
@@ -45,7 +46,6 @@ class LoginController extends Controller
     
             // Basado en el código de estado HTTP
             if ($statusCode == 200) {
-                
                 Session::put('codigo_usuario', $data['codigo_usuario']);
                 return redirect()->route('feed');
             } else {
