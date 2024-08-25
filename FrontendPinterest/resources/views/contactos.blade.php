@@ -20,7 +20,7 @@
                     <div class="d-inline-block rounded-circle bg-danger text-white text-center mr-3" style="width: 30px; height: 30px;">
                         <span class="align-middle" style="line-height: 30px; font-size: 16px;">A</span>
                     </div>
-                    <span class="text-white">Ale Solano</span>
+                    <span class="text-white">Valeria Padilla</span>
                 </div>
             </div>
             <div class="col-auto">

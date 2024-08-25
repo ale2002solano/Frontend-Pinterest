@@ -71,6 +71,14 @@ Route::get('/contactos', function () {
     return view('contactos');
 });
 
+Route::get('/crearpin', function () {
+    return view('crearpin');
+});
+
+Route::get('/crearcollage', function () {
+    return view('crearcollage');
+});
+
 Route::get('/prueba', function () {
     return view('prueba');
 });
